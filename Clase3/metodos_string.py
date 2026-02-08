@@ -17,7 +17,7 @@ f = "!"
 """
 resultado = texto.find(
     "w"
-)  # Busca la primera ocurrencia de "u", devuelve -1 si no lo encuentra a diferencia de index
+)  # Busca la primera ocurrencia de "w", devuelve -1 si no lo encuentra a diferencia de index
 
 resultado = texto.replace(
     "texto", "frase"
