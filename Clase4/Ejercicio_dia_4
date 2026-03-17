@@ -1,0 +1,25 @@
+from random import *
+
+print("He pensado un numero del 1 al 100, adivinalo. Tienes solo 8 intentos.")
+aleatorio = randint(1, 100)
+intentos = 0
+numero = 0
+while numero != aleatorio or intentos <= 8:
+    numero = int(input("Ingrese su numero: "))
+    if numero < 1 or numero > 100:
+        print("El numero debe estar entre 1 y 100")
+    elif numero < aleatorio:
+        print(
+            f"El numero ingresado: {numero} es incorrecto. Pista, es menor al numero pensado"
+        )
+    elif numero > aleatorio:
+        print(
+            f"El numero ingresado: {numero} es incorrecto. Pista, es mayor al numero pensado."
+        )
+    elif numero == aleatorio:
+        print(
+            f"Has acertado! tu numero {numero} coincide con el pensado!. Te ha llevado un total de {intentos} intentos."
+        )
+    intentos = intentos + 1
+    if intentos == 8:
+        print("Has llegado al numero de intentos maximos.")

@@ -20,3 +20,21 @@ print(mi_lista + otra_lista)  # concatena las dos listas
 mi_lista.sort()  # ordena la lista en orden ascendente no se puede guardar el resultado en otra variable
 mi_lista.reverse()  # invierte el orden de la lista
 print(mi_lista)  # imprime el primer elemento de la lista
+
+lista = "Python"
+
+una_lista = [
+    n if n % 3 == 0 else "no" for n in range(0, 20, 2)
+]  # lista de números del 0 al 20 con paso 2, si el número es divisible por 3 se agrega a la lista, sino se agrega "no"
+print(una_lista)
+
+pies = [10, 20, 30, 40, 50]
+metros = [p / 3.281 for p in pies]
+print(metros)
+
+valores = [1, 2, 3, 4, 5, 6, 9.5]
+valores_cuadrado = [p**2 for p in valores]
+
+temperatura_fahrenheit = [32, 212, 275]
+grados_celcius = [((p - 32) * (5 / 9)) for p in temperatura_fahrenheit]
+print(grados_celcius)
